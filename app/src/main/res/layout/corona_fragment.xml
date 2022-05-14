@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:shimmer_auto_start="true"
+            app:shimmer_duration="800"
+            android:layout_marginTop="106dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/placeholder_list_item" />
+
+                <include layout="@layout/placeholder_list_item" />
+
+                <include layout="@layout/placeholder_list_item" />
+
+                <include layout="@layout/placeholder_list_item" />
+
+                <include layout="@layout/placeholder_list_item" />
+
+                <include layout="@layout/placeholder_list_item" />
+
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/highest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topcases"
+                    android:textColor="@color/colorDefaultText"
+                    android:textStyle="bold"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/day_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:popupBackground="@color/colorAccent"
+                    android:backgroundTint="@color/colorDefaultText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/search_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/search_icon"
+                app:tint="@color/colorDefaultText" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sort_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highest"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="@string/sorted_by"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/sort_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkedButton="@id/sort_by_today_cases"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/sort_by_today_cases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sort_bg_selector"
+                    android:button="@android:color/transparent"
+                    android:padding="2dp"
+                    android:text="@string/cases"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RadioButton
+                    android:id="@+id/sort_by_today_deaths"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@drawable/sort_bg_selector"
+                    android:button="@android:color/transparent"
+                    android:padding="2dp"
+                    android:text="@string/deaths"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10ssp" />
+
+                <RadioButton
+                    android:id="@+id/sort_by_active_cases"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:background="@drawable/sort_bg_selector"
+                    android:button="@android:color/transparent"
+                    android:padding="2dp"
+                    android:text="@string/active"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_10ssp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/sort_layout"
+            >
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:drawSelectorOnTop="true"
+                android:headerDividersEnabled="true"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:scrollbarFadeDuration="100"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbarThumbVertical="@drawable/accent_bg" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:elevation="@dimen/_25sdp"
+            android:outlineSpotShadowColor="@color/colorAccent"
+            android:outlineAmbientShadowColor="@color/colorAccent"
+            android:background="@drawable/accent_blue_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:iconifiedByDefault="false"
+            android:visibility="gone"
+            app:defaultQueryHint="@string/search"
+            app:queryHint="@string/search" />
+
+        <ImageView
+            android:id="@+id/empty_tw"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+</layout>

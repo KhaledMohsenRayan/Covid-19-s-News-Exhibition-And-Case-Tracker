@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/global_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="56dp"
+            app:shimmer_auto_start="true"
+            app:shimmer_duration="800">
+
+            <include layout="@layout/placeholder_global_fragment" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbarFadeDuration="100"
+            android:scrollbarThumbVertical="@drawable/accent_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                tools:context=".ui.GlobalFragment">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/welcome_msg"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorDefaultText"
+                    android:textSize="@dimen/_13ssp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/global_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/item_background"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:gravity="center"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/world_icon"
+                                app:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="12dp"
+                                android:text="@string/worldwide"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="@dimen/_20sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/cases"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <TextView
+                                    android:id="@+id/world_casesCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="134,890" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/deaths"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="@dimen/_14ssp" />
+
+                                <TextView
+                                    android:id="@+id/world_deathCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="3,289" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/gcountry_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/item_background"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/gflag"
+                                android:layout_width="60dp"
+                                android:layout_height="52dp"
+                                android:layout_marginEnd="10dp"
+                                tools:src="@drawable/world_icon" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="12dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/gcountry_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="@dimen/_15ssp"
+                                    android:textStyle="bold"
+                                    tools:text="EGYPT" />
+
+                                <TextView
+                                    android:id="@+id/subAdminName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/colorPrimaryDarkLite"
+                                    android:textSize="@dimen/_11ssp"
+                                    android:textStyle="normal"
+                                    tools:text="Cairo" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/active_cases_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_patient"
+                                    app:tint="#237AE0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/totalcases"
+                                    android:textColor="#237AE0"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/country_casesCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="#237AE0"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="134,890" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/recoverd_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_heart" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/recovered"
+                                    android:textColor="#429A46"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/country_recoveredCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="#429A46"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="3,289" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/critical_cases_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_virus" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/criticalcases"
+                                    android:textColor="#CC3433"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/country_criticalCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textColor="#CC3433"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="134,890" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="8dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grey_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_death"
+                                    app:tint="#6A747D" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="@string/deaths"
+                                    android:textColor="#6A747D"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/country_deathCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:textColor="#6A747D"
+                                    android:textSize="26sp"
+                                    android:textStyle="bold"
+                                    tools:text="3,289" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="end"
+                            android:src="@drawable/open_link"
+                            app:tint="@color/colorSecondaryText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/item_background"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="16dp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="24dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/virus_icon"
+                                app:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="12dp"
+                                android:text="@string/information"
+                                android:textAllCaps="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/about_box"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_gravity="center"
+                            android:layout_marginVertical="6dp"
+                            android:background="@drawable/white_bg"
+                            android:orientation="vertical"
+                            android:padding="8dp">
+
+                            <ImageView
+                                android:layout_width="72dp"
+                                android:layout_height="72dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="3dp"
+                                android:src="@drawable/virus_info_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="@string/about"
+                                android:textColor="#BF0D1333"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_corona"
+                                android:textColor="#BF0D1333"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/symptoms_box"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_marginVertical="6dp"
+                                android:layout_weight="1"
+                                android:layout_marginEnd="12dp"
+                                android:background="@drawable/white_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/symptoms_info_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/symptoms"
+                                    android:textColor="#BF0D1333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/symptoms_info"
+                                    android:textColor="#BF0D1333"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/prevention_box"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_weight="1"
+
+                                android:layout_marginVertical="6dp"
+                                android:background="@drawable/white_bg"
+                                android:orientation="vertical"
+                                android:padding="8dp">
+
+                                <ImageView
+                                    android:layout_width="72dp"
+                                    android:layout_height="72dp"
+                                    android:layout_gravity="center"
+
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/prevention_info_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/prevention"
+
+                                    android:textColor="#BF0D1333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/prevention_info"
+                                    android:textColor="#BF0D1333"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="200dp"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="32dp"
+                        android:background="@color/colorDefaultText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingVertical="30dp">
+
+
+                        <ImageView
+                            android:id="@+id/ggithub"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/github"
+                            app:tint="@color/colorDefaultText" />
+
+                        <ImageView
+                            android:id="@+id/gfacebook"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/facebook"
+                            app:tint="@color/colorDefaultText" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>

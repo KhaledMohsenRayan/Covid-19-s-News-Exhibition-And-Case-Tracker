@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/globalFragment"
+        tools:layout="@layout/global_fragment"
+        android:name="com.example.coronareport.ui.GlobalFragment"
+        android:label="GlobalFragment" >
+        <action
+            android:id="@+id/action_globalFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_globalFragment_to_preventionFragment"
+            app:destination="@id/preventionFragment" />
+        <action
+            android:id="@+id/action_globalFragment_to_symptomsFragment"
+            app:destination="@id/symptomsFragment" />
+        <action
+            android:id="@+id/action_globalFragment_to_countyDetailsFragment"
+            app:destination="@id/countyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        tools:layout="@layout/news_fragment"
+        android:name="com.example.coronareport.ui.NewsFragment"
+        android:label="NewsFragment" />
+    <fragment
+        android:id="@+id/coronaFragment"
+        tools:layout="@layout/corona_fragment"
+        android:name="com.example.coronareport.ui.CoronaFragment"
+        android:label="CoronaFragment" >
+        <action
+            android:id="@+id/action_coronaFragment_to_countyDetailsFragment"
+            app:destination="@id/countyDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.coronareport.ui.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/countyDetailsFragment"
+        android:name="com.example.coronareport.ui.CountryDetailsFragment"
+        android:label="fragment_county_details"
+        tools:layout="@layout/fragment_country_details" >
+        <argument
+            android:name="COUNTRY_NAME"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/preventionFragment"
+        android:name="com.example.coronareport.ui.PreventionFragment"
+        android:label="fragment_prevention"
+        tools:layout="@layout/fragment_prevention" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.example.coronareport.ui.SymptomsFragment"
+        android:label="fragment_symptoms"
+        tools:layout="@layout/fragment_symptoms" />
+    <fragment
+        tools:layout="@layout/fragment_splash"
+        android:id="@+id/splashFragment"
+        android:name="com.example.coronareport.ui.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_globalFragment"
+            app:destination="@id/globalFragment"
+            app:exitAnim="@anim/exit_to_right"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

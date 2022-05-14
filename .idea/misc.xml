@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/accent_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/accent_blue_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/active_cases_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/blue_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/bnv_tab_item_foreground.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/critical_cases_bg.xml" value="0.13148148148148148" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/flag_icon.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/grey_bg.xml" value="0.19948717948717948" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/ic_android_black_24dp.xml" value="0.13148148148148148" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/ic_covid.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/ic_heart.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/ic_patient.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/item_background.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/red_bg.xml" value="0.13148148148148148" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/sort_background.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/sort_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/sort_bg_selector.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/drawable/white_bg.xml" value="0.20260416666666667" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/about_activity.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/corona_fragment.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/country_activity.xml" value="0.33" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_about.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_country_details.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_prevention.xml" value="0.33" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_prevention2.xml" value="0.17239583333333333" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_splash.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/fragment_symptoms.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/global_fragment.xml" value="0.21" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/main_activity.xml" value="0.22" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/news_fragment.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/news_list_item.xml" value="0.22" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/placeholder_global_fragment.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/placeholder_news_item.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/prevention_activity.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/sort_bg_selected.xml" value="0.1743659420289855" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/spinner_item.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/layout/symptoms_activity.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/Dev/AndroidStudioProjects/covid-report/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

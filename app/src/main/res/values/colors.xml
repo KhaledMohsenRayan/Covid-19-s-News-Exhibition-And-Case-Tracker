@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D1333</color>
+    <color name="colorPrimaryDark">#0D1333</color>
+    <color name="colorAccent">#4F81FD</color>
+    <color name="colorPrimaryDarkLite">#BF0D1333</color>
+    <color name="colorItem">#AEA1E5</color>
+    <color name="colorDefaultText">#ffffff</color>
+    <color name="colorSecondaryText">#FFFFFF</color>
+    <color name="colorTertiaryText">#59000000</color>
+    <color name="colorAccentTint">#4F81FD</color>
+    <color name="colorRecoveredTrend">#3296FF</color>
+    <color name="colorDeathTrend">#FF3232</color>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/globalFragment"
+        android:icon="@drawable/world_icon"
+        android:title="@string/global" />
+    <item
+        android:id="@+id/coronaFragment"
+        android:icon="@drawable/flag_icon"
+        android:title="@string/countries" />
+    <item
+        android:id="@+id/newsFragment"
+        android:icon="@drawable/news_icon"
+        android:title="@string/news" />
+</menu>
