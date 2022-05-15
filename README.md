@@ -1,5 +1,5 @@
 # Covid-19’s News Exhibition And Case Tracker 
-his application tracks cases, exhibits details and news about Covid-19 cases and general news.
+This application tracks cases, exhibits details and news about Covid-19 cases and general news.
 
  * The main screen opens the cases and details depending on your current location (country, city)
 
