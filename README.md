@@ -15,6 +15,7 @@ There are news part,where it Exhibit news about Corona Only for 6 Different Coun
 ![Sory By Cases](https://user-images.githubusercontent.com/105173268/168486359-d912401d-7ce4-4979-9444-6d7337c579e5.jpeg)
 ![Search Bar](https://user-images.githubusercontent.com/105173268/168486140-a13c9960-6bbb-4b3b-8946-e3ece4381dc6.jpeg)
 ![IRAQ In Details](https://user-images.githubusercontent.com/105173268/168486143-7cddce3f-7926-4bac-a7d3-2691ea2af9fa.jpeg)
+![Graph for Death And Iran Indetails](https://user-images.githubusercontent.com/105173268/168486634-027e6c68-2b6d-4ee6-b936-a4ed98cae2e2.jpeg)
 ![News](https://user-images.githubusercontent.com/105173268/168486583-4d03bffb-9e64-4f61-b469-63d1d6c1d753.jpeg)
 
 
