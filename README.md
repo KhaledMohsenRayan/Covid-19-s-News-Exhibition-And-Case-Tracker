@@ -1,10 +1,15 @@
-# covid19 
-This Application Track Cases,Exhibit details and news about Covid-19 cases and in general.
-The Main Screen Opens the cases and details depending on your current location (Country,City)
-You Can track the whole world cases and details.(Search is allowed)
-you can Sort the countries according to the number of Deaths,Total Cases, Current Active Cases.
-Openning a country will show and presents data indetails and graphs for cases-deaths
-There are news part,where it Exhibit news about Corona Only for 6 Different Countries
+# Covid-19’s News Exhibition And Case Tracker 
+his application tracks cases, exhibits details and news about Covid-19 cases and general news.
+
+ * The main screen opens the cases and details depending on your current location (country, city)
+
+* You can also track the whole world cases and details (Search is available)
+
+* You can sort the countries according to the number of deaths, total cases, current active cases.
+
+* Opening a country will show and present data in details along with graphs for cases-deaths
+
+* There is the news tab, where it exhibit news about coronavirus for 6 different countries.
 
 ![Splash Screen](https://user-images.githubusercontent.com/105173268/168486087-fe7aceb3-c7dc-4a16-9724-71fc254d95c2.jpeg)
 ![Main Activity](https://user-images.githubusercontent.com/105173268/168486111-981badae-4d0c-4bce-8480-5d79c07de749.jpeg)
